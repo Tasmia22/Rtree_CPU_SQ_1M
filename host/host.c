@@ -112,12 +112,9 @@ int main()
     DPU_ASSERT(dpu_load(dpu_set, DPU_BINARY, NULL));
 
     DPU_ASSERT(dpu_get_nr_dpus(dpu_set, &nr_of_dpus));
-    printf("\nAllocated %d DPU(s)\n", nr_of_dpus);
+    printf("\nAllocated %d DPU(s)", nr_of_dpus);
 
-    printf("\nPassing Tree and Query to DPUs...\n");
-
-    printf("\nPassing Data Points DPUs...\n");
-
+    printf("\nPassing Tree and Query to DPUs...");
     uint64_t dpu_id = 0;
     // int currentIndex=0;
     int start_index = 1;
