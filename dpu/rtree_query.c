@@ -77,6 +77,7 @@ bool search_rtree_dpu(int node_index, Point query_point, int start_child, int en
 
 int main()
 {
+    DPU_RESULT = 0;
     uint32_t tasklet_id = me(); // Tasklet ID (0 to NR_TASKLETS - 1)
     uint64_t dpu_index = DPU_INDEX;
 
