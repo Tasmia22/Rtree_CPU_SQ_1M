@@ -15,7 +15,7 @@ static inline uint32_t pceil8(uint32_t *a) {
 }
 
 #define BUNDLEFACTOR 30 // Number of points to form a leaf node
-#define FANOUT 32   // Number of children per non-leaf node
+#define FANOUT 16   // Number of children per non-leaf node
 #define MAX_POINTS 10000
 #define MAX_NODES 10000
 
